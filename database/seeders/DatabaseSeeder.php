@@ -8,16 +8,22 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::create([
+            'username'  => '00',
+            'password'  => 'hasbi_260600',
+            'name'      => 'Hasbi Nabil',
+            'email'     => 'hasbinabil.work@gmail.com',
+            'role_id'   => 1
+        ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        User::create([
+            'username'  => 'zarayaa',
+            'password'  => 'aya123',
+            'name'      => 'Zahra Amelia',
+            'email'     => 'zahramelia511@gmail.com',
+            'role_id'   => 2
         ]);
     }
 }
