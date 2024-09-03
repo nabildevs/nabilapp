@@ -16,14 +16,32 @@
 
 <body class="font-comm">
 
+    {{-- Header Section --}}
+    <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a class="font-code font-semibold text-secondary text-lg block py-6">nabilapp</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button type="button" id="hamburger" name="hamburger" class="block absolute right-4">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
     {{-- Hero Section --}}
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 border border-b-semilight">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/2 lg:w-1/2 self-center px-4">
                     <h1 class="text-5xl lg:text-6xl font-black text-primary mb-4">Full-stack<br>web
                         developer
-                        <h2 class="text-lg lg:text-2xl font-medium text-secondary">Hi👋🏻 always enjoys crafting
+                        <h2 class="text-lg lg:text-2xl font-medium text-secondary mb-6">Hi👋🏻 always enjoys crafting
                             impactful and visually captivating websites
                         </h2>
                     </h1>
@@ -41,7 +59,7 @@
     <section id="about" class="bg-light pt-12 pb-12">
         <div class="container">
             <div class="w-full px-4 mb-10">
-                <p class="text-lg lg:text-xl text-primary mb-5">I'm a full-stack web developer who has been helping my
+                <p class="text-base lg:text-xl text-primary mb-5">I'm a full-stack web developer who has been helping my
                     clients create the websites they need for over a year. I'm always eager to learn and explore new
                     ways to make the web more exciting!</p>
                 <a href=""
@@ -50,6 +68,8 @@
             </div>
         </div>
     </section>
+
+    <script src="{{ asset('js/script-home-2.js') }}"></script>
 </body>
 
 </html>
