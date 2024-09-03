@@ -12,7 +12,9 @@ window.onscroll = function () {
 
 // Hamburger
 const hamburger = document.querySelector('#hamburger');
+const headMenu = document.querySelector('#head-menu');
 
 hamburger.addEventListener('click', function () {
 	hamburger.classList.toggle('hamburger-active');
+	headMenu.classList.toggle('hidden');
 });
