@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Home */
+/* Hero Section */
+.hero {
+	@apply pt-28
+    border border-b-semilight;
+}
+
+.hero-left {
+	@apply w-full md:w-1/2 lg:w-1/2
+    self-center
+    px-4;
+}
+
+.hero-h1 {
+	@apply text-5xl lg:text-6xl text-primary
+    font-black
+    mb-4;
+}
+
+.hero-h2 {
+	@apply text-lg lg:text-2xl text-secondary
+    font-medium
+    mb-6;
+}
+
+.hero-right {
+	@apply w-full md:w-1/2 lg:w-1/2 px-4;
+	@layer self-right;
+}
+
+/* About Section */
+.about {
+	@apply bg-light border border-b-semilight
+    pt-12 pb-12;
+}
+
+.about-p {
+	@apply text-base lg:text-xl text-primary
+    mb-5;
+}
+
+.about-btn {
+	@apply px-3.5 py-2
+    rounded-md
+    bg-primary hover:opacity-90
+    text-white
+    font-semibold
+    transition duration-300 ease-in-out;
+}
+
 .navbar-fixed {
 	@apply fixed z-[9999] border border-b-semilight;
 }
@@ -21,3 +71,4 @@
 .hamburger-active > span:nth-child(3) {
 	@apply -rotate-45;
 }
+/* End Home */

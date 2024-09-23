@@ -21,13 +21,12 @@ export default {
 				primary: '#0f172a',
 				secondary: '#475569',
 			},
-			//prettier-ignore
 			screens: {
-                '2xl': '1336px',
-                'xl': '1080px',
-                'lg': '924px',
-                'md': '663px',
-            },
+				'2xl': '1336px',
+				'xl': '1080px',
+				'lg': '924px',
+				'md': '663px',
+			},
 		},
 	},
 	plugins: [],

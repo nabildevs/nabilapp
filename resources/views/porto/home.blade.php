@@ -2,18 +2,18 @@
     <x-slot:title>{{ $title }}</x-slot:title>
 
     {{-- Hero Section --}}
-    <section id="home" class="pt-28 border border-b-semilight">
+    <section id="home" class="hero">
         <div class="container">
             <div class="flex flex-wrap mb-4">
-                <div class="w-full md:w-1/2 lg:w-1/2 self-center px-4">
-                    <h1 class="text-5xl lg:text-6xl font-black text-primary mb-4">Full-stack<br>web
+                <div class="hero-left">
+                    <h1 class="hero-h1">Full-stack<br>web
                         developer
-                        <h2 class="text-lg lg:text-2xl font-medium text-secondary mb-6">Hi👋🏻 always enjoys crafting
+                        <h2 class="hero-h2">Hi👋🏻 always enjoys crafting
                             impactful and visually captivating websites
                         </h2>
                     </h1>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/2 self-right px-4">
+                <div class="hero-right">
                     <div class="relative">
                         <img src="{{ asset('img/home/hero.png') }}" alt="Hero Image">
                     </div>
@@ -23,14 +23,13 @@
     </section>
 
     {{-- About Section --}}
-    <section id="about" class="bg-light pt-12 pb-12 border border-b-semilight">
+    <section id="about" class="about">
         <div class="container">
             <div class="w-full px-4 mb-4">
-                <p class="text-base lg:text-xl text-primary mb-5">I'm a full-stack web developer who has been helping my
+                <p class="about-p">I'm a full-stack web developer who has been helping my
                     clients create the websites they need for over a year. I'm always eager to learn and explore new
                     ways to make the web more exciting!</p>
-                <a href=""
-                    class="px-3.5 py-2 bg-primary hover:opacity-90 text-white font-semibold rounded-md transition duration-300 ease-in-out">About
+                <a href="" class="about-btn">About
                     me</a>
             </div>
         </div>

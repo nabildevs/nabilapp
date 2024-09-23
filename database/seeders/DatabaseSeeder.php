@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
             'password'  => 'hasbi_260600',
             'name'      => 'Hasbi Nabil',
             'email'     => 'hasbinabil.work@gmail.com',
-            'role_id'   => 1
+            // 'role_id'   => 1
         ]);
 
         User::create([
@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'password'  => 'aya123',
             'name'      => 'Zahra Amelia',
             'email'     => 'zahramelia511@gmail.com',
-            'role_id'   => 2
+            // 'role_id'   => 2
         ]);
     }
 }
